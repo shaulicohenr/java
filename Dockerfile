@@ -1,3 +1,4 @@
-FROM python:3.10-slim
+FROM eclipse-temurin:11-jdk
 WORKDIR /app
-CMD ["python"]
+COPY src/main/java/com/example/HelloWorld.java .
+CMD ["java", "HelloWorld.java"]
